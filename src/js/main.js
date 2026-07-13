@@ -75,5 +75,54 @@ const countObserver = new IntersectionObserver(
 );
 document.querySelectorAll('.stat__num').forEach((el) => countObserver.observe(el));
 
+// ===== Rotating role words (typewriter) =====
+const roleEl = document.getElementById('roleRotate');
+if (roleEl) {
+  const words = [
+    "users don't have to.",
+    'bugs never reach production.',
+    'releases ship with confidence.',
+    'requirements stay crystal clear.',
+  ];
+  let wi = 0, ci = 0, deleting = false;
+  const type = () => {
+    const word = words[wi];
+    ci += deleting ? -1 : 1;
+    roleEl.textContent = word.slice(0, ci);
+    let delay = deleting ? 45 : 85;
+    if (!deleting && ci === word.length) { delay = 1800; deleting = true; }
+    else if (deleting && ci === 0) { deleting = false; wi = (wi + 1) % words.length; delay = 350; }
+    setTimeout(type, delay);
+  };
+  setTimeout(type, 900);
+}
+
+// ===== Scrollspy: highlight active nav link =====
+const sections = [...document.querySelectorAll('main section[id], section[id]')];
+const navMap = new Map(
+  [...document.querySelectorAll('.nav__links a')].map((a) => [a.getAttribute('href').slice(1), a])
+);
+const spy = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((e) => {
+      const link = navMap.get(e.target.id);
+      if (!link) return;
+      if (e.isIntersecting) {
+        navMap.forEach((l) => l.classList.remove('active'));
+        link.classList.add('active');
+      }
+    });
+  },
+  { rootMargin: '-45% 0px -50% 0px' }
+);
+sections.forEach((s) => spy.observe(s));
+
+// ===== Back to top =====
+const toTop = document.getElementById('toTop');
+if (toTop) {
+  window.addEventListener('scroll', () => toTop.classList.toggle('show', window.scrollY > 600), { passive: true });
+  toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+}
+
 // ===== Footer year =====
 document.getElementById('year').textContent = new Date().getFullYear();
