@@ -1,70 +1,78 @@
 # Balaji Guggilam — Portfolio
 
-A fast, responsive personal portfolio website for **Balaji Guggilam**, Senior Quality Control Analyst / Manual Testing Engineer. Showcases QA projects, skills, and experience.
+A fast, responsive personal portfolio for **Balaji Guggilam** — Senior **QA Analyst & Business Analyst** (Manual Testing · Requirements & Scope · Web · Android · iOS · Desktop).
 
-🔗 **Live site:** _enable GitHub Pages (see below) to publish_
+🔗 **Live:** https://balaji2715.github.io/balaji-portfolio/ *(after Pages is enabled — see below)*
 
-## Features
+## Highlights
 
-- ⚡️ Pure static HTML/CSS/JS — no build step, no dependencies
-- 🌗 Light / dark theme toggle (remembers your choice)
-- 📱 Fully responsive with a mobile nav
-- ✨ Scroll-reveal animations + animated stat counters
-- 🧪 QA-themed hero with a live "test report" terminal
-- 📄 Downloadable resume
-
-## Sections
-
-| Section | Contents |
-|---|---|
-| **Hero** | Intro, headline stats (years, test cases, projects, defect reduction) |
-| **About** | Bio + a simulated test-run terminal |
-| **Skills** | Methodologies, defect management, API/mobile, automation, tools, docs |
-| **Projects** | Featured work — MyBabyWish, Nice Guides (Sightwalk), The Easy One (Manuel) — plus 17 other contributions |
-| **Experience** | Work + education timeline |
-| **Contact** | Email, phone, resume download |
-
-## Run locally
-
-No tooling needed — just open the file:
-
-```bash
-open index.html
-```
-
-Or serve it (recommended, so relative paths and the resume download behave correctly):
-
-```bash
-python3 -m http.server 8000
-# then visit http://localhost:8000
-```
-
-## Deploy to GitHub Pages
-
-1. Push this repo to GitHub.
-2. Go to **Settings → Pages**.
-3. Under **Build and deployment → Source**, choose **Deploy from a branch**.
-4. Select branch `main` and folder `/ (root)`, then **Save**.
-5. Your site goes live at `https://<username>.github.io/balaji-portfolio/`.
+- ⚡️ Pure static HTML/CSS/JS — **no build step**, zero runtime dependencies
+- 🌗 Light / dark theme toggle (persisted)
+- ✨ Animated hero (aurora, floating real app icons, typewriter role), skills marquee, scroll-reveal, count-up stats
+- 📱 Fully responsive with mobile nav + scrollspy + back-to-top
+- 🧩 Six **live production apps** with real App Store / Play Store / web links
+- ♿️ Respects `prefers-reduced-motion`
 
 ## Project structure
 
 ```
 balaji-portfolio/
-├── index.html          # Markup + content
-├── styles.css          # Design system + layout + responsive
-├── script.js           # Theme, nav, scroll-reveal, counters
+├── index.html                 # Page markup & content
+├── src/
+│   ├── css/
+│   │   └── styles.css          # Design tokens, layout, components, responsive
+│   └── js/
+│       └── main.js             # Theme, nav, scrollspy, reveal, counters, typewriter
 ├── assets/
-│   └── Balaji_Guggilam_Resume.pdf
+│   ├── logos/                  # Real app icons (App Store artwork)
+│   └── resume/
+│       └── Balaji_Guggilam_Resume.pdf
+├── .github/workflows/deploy.yml  # Auto-deploy to GitHub Pages on push to main
+├── .editorconfig               # Consistent editor settings
+├── .prettierrc.json            # Code formatting rules
+├── package.json                # Dev/format scripts
+├── LICENSE                     # MIT
 └── README.md
 ```
 
+## Run locally
+
+No tooling required — just open `index.html`. To serve it (recommended, so relative paths resolve):
+
+```bash
+# Option A — npm script (uses npx serve, no install needed)
+npm run dev            # → http://localhost:8000
+
+# Option B — Python, no Node needed
+python3 -m http.server 8000
+```
+
+## Formatting
+
+```bash
+npm run format         # format all files with Prettier
+npm run format:check   # verify formatting in CI / pre-commit
+```
+
+## Deploy
+
+**Automatic (recommended):** the included GitHub Actions workflow deploys on every push to `main`.
+Enable it once: **Settings → Pages → Build and deployment → Source → GitHub Actions**.
+
+**Manual alternative:** **Settings → Pages → Deploy from a branch → `main` / `root`**.
+
+Live at `https://<username>.github.io/balaji-portfolio/`.
+
 ## Customizing
 
-- **Content** lives in `index.html` — update text, projects, and links directly.
-- **Colors / fonts** are CSS variables at the top of `styles.css` (`:root`).
-- **Resume** — replace the PDF in `assets/` (keep the filename or update the two links in `index.html`).
+| What | Where |
+|---|---|
+| Text, projects, links | `index.html` |
+| Colors, fonts, spacing | CSS variables in `:root` at the top of `src/css/styles.css` |
+| Behavior (theme, animations) | `src/js/main.js` |
+| Resume | replace `assets/resume/Balaji_Guggilam_Resume.pdf` (keep the filename, or update the 3 links in `index.html`) |
+| App icons | `assets/logos/` |
 
 ---
 
-Built with plain web tech. Contributions and tweaks welcome via PR.
+Built with plain web tech — QA-grade, no flaky dependencies.

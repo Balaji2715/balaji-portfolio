@@ -1,0 +1,26 @@
+{
+  "name": "balaji-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Balaji Guggilam — Senior QA Analyst & Business Analyst.",
+  "author": "Balaji Guggilam <balajiguggilam97@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "homepage": "https://balaji2715.github.io/balaji-portfolio/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Balaji2715/balaji-portfolio.git"
+  },
+  "scripts": {
+    "dev": "npx --yes serve@latest . -l 8000",
+    "start": "npx --yes serve@latest . -l 8000",
+    "format": "npx --yes prettier@latest --write \"**/*.{html,css,js,json,md}\"",
+    "format:check": "npx --yes prettier@latest --check \"**/*.{html,css,js,json,md}\""
+  },
+  "keywords": [
+    "portfolio",
+    "qa",
+    "business-analyst",
+    "manual-testing",
+    "static-site"
+  ]
+}

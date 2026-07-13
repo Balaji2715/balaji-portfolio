@@ -9,7 +9,11 @@ Thumbs.db
 
 # Logs
 *.log
+npm-debug.log*
 
-# Local server / misc
+# Dependencies (only present if tooling is installed locally)
 node_modules/
 .cache/
+
+# Prettier / tooling caches
+.prettiercache
