@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Balaji Guggilam — Senior QA / Manual Testing Engineer. 5+ years testing web & mobile apps across healthcare, travel and compliance." />
+  <meta name="author" content="Balaji Guggilam" />
+  <meta property="og:title" content="Balaji Guggilam — QA Engineer" />
+  <meta property="og:description" content="Senior Quality Control Analyst with 5+ years in manual QA for web & mobile applications." />
+  <meta property="og:type" content="website" />
+  <title>Balaji Guggilam — QA Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%94%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navbar -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav__brand">BG<span>.</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 17a5 5 0 100-10 5 5 0 000 10zm0 2a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zm0-18a1 1 0 011 1v1a1 1 0 11-2 0V2a1 1 0 011-1zm11 11a1 1 0 010 2h-1a1 1 0 110-2h1zM3 12a1 1 0 010 2H2a1 1 0 110-2h1zm16.66 6.66a1 1 0 011.41 1.41l-.7.71a1 1 0 11-1.42-1.42l.71-.7zM4.93 4.93a1 1 0 011.41 1.41l-.7.71A1 1 0 014.22 5.63l.71-.7zm14.14 0l.71.7a1 1 0 01-1.42 1.42l-.7-.71a1 1 0 011.41-1.41zM6.34 17.66a1 1 0 010 1.41l-.71.71a1 1 0 11-1.41-1.42l.7-.7a1 1 0 011.42 0z"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 3a9 9 0 109 9c0-.46-.04-.92-.1-1.36a5.39 5.39 0 01-8.54-5.54c0-.55.08-1.09.24-1.6A9 9 0 0012 3z"/></svg>
+      </button>
+      <a href="assets/Balaji_Guggilam_Resume.pdf" class="btn btn--ghost btn--sm" download>Resume</a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero__glow"></div>
+      <div class="container hero__inner">
+        <p class="hero__eyebrow reveal">👋 Hi, I'm Balaji Guggilam</p>
+        <h1 class="hero__title reveal">
+          I break software<br /><span class="grad">so users don't have to.</span>
+        </h1>
+        <p class="hero__lead reveal">
+          Senior Quality Control Analyst with <strong>5+ years</strong> in manual QA for web &amp; mobile
+          apps across <strong>healthcare, travel and compliance</strong>. I design test plans, hunt defects,
+          and ship stable releases.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+        </div>
+        <div class="hero__stats reveal">
+          <div class="stat"><span class="stat__num" data-count="5">0</span><span class="stat__suffix">+</span><p>Years in QA</p></div>
+          <div class="stat"><span class="stat__num" data-count="500">0</span><span class="stat__suffix">+</span><p>Test cases / release</p></div>
+          <div class="stat"><span class="stat__num" data-count="20">0</span><span class="stat__suffix">+</span><p>Projects tested</p></div>
+          <div class="stat"><span class="stat__num" data-count="30">0</span><span class="stat__suffix">%</span><p>Fewer API defect escapes</p></div>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker">01 — About</span>
+          <h2 class="section__title">Quality is a habit, not an act</h2>
+        </div>
+        <div class="about">
+          <div class="about__text reveal">
+            <p>
+              I'm a QA engineer based in <strong>Bengaluru, India</strong>, focused on manual testing for
+              web and mobile products. Over the past five years I've owned the full quality lifecycle —
+              authoring test plans, designing test cases, executing regression suites, validating APIs,
+              and coordinating UAT and production releases.
+            </p>
+            <p>
+              My work has driven measurable outcomes: a <strong>30% drop in API defect escapes</strong>,
+              a <strong>25% reduction in post-release defects</strong>, and <strong>20% better app
+              stability</strong> through rigorous cross-device testing. I care deeply about defect
+              management, clear reporting, and collaborating with developers and stakeholders to ship
+              releases teams can trust.
+            </p>
+            <ul class="about__facts">
+              <li><span>📍</span> Bengaluru, India</li>
+              <li><span>💼</span> Sr. QA Analyst @ AppLaunch</li>
+              <li><span>🎓</span> B.Tech, Lovely Professional University</li>
+              <li><span>🧪</span> Manual · API · Automation</li>
+            </ul>
+          </div>
+          <div class="about__card reveal">
+            <div class="terminal">
+              <div class="terminal__bar"><i></i><i></i><i></i><span>qa-report.log</span></div>
+              <pre class="terminal__body"><span class="c-gray">$ run test-suite --release latest</span>
+<span class="c-green">✔</span> Functional      <span class="c-dim">142 passed</span>
+<span class="c-green">✔</span> Integration     <span class="c-dim">88 passed</span>
+<span class="c-green">✔</span> Regression      <span class="c-dim">210 passed</span>
+<span class="c-green">✔</span> API (Postman)   <span class="c-dim">64 passed</span>
+<span class="c-yellow">●</span> Cross-device    <span class="c-dim">10+ combos</span>
+
+<span class="c-green">Coverage: 95%+  ·  Defects escaped: ↓30%</span>
+<span class="c-gray">$ status</span> <span class="blink">READY TO SHIP ▮</span></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker">02 — Skills</span>
+          <h2 class="section__title">The testing toolkit</h2>
+        </div>
+        <div class="skills">
+          <div class="skill-card reveal">
+            <h3><span class="skill-card__icon">🧭</span> Methodologies</h3>
+            <div class="tags">
+              <span>Functional</span><span>Integration</span><span>System</span><span>Regression</span>
+              <span>Sanity</span><span>Smoke</span><span>UAT</span><span>Negative</span>
+              <span>End-to-End</span><span>Migration</span><span>Cross-browser</span><span>Cross-device</span>
+              <span>Agile / Scrum</span><span>SDLC</span><span>STLC</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h3><span class="skill-card__icon">🐞</span> Test &amp; Defect Management</h3>
+            <div class="tags">
+              <span>Test Plan Authoring</span><span>Test Case Design</span><span>Test Execution</span>
+              <span>Defect Logging</span><span>Defect Tracking</span><span>Prioritization</span>
+              <span>Bug Lifecycle</span><span>Root Cause Analysis</span><span>JIRA</span>
+              <span>Test Reporting</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h3><span class="skill-card__icon">🔌</span> API &amp; Mobile</h3>
+            <div class="tags">
+              <span>Postman</span><span>REST API Validation</span><span>Real Device Testing</span>
+              <span>Charles Proxy</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h3><span class="skill-card__icon">⚙️</span> Automation &amp; CI/CD</h3>
+            <div class="tags">
+              <span>Selenium</span><span>Playwright</span><span>Codegen AI</span>
+              <span>CI/CD Pipelines</span><span>Build Triggers</span><span>Test Integration</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h3><span class="skill-card__icon">🛠️</span> Environments &amp; Tools</h3>
+            <div class="tags">
+              <span>Windows</span><span>macOS</span><span>Chrome DevTools</span>
+              <span>Firefox Dev Tools</span><span>Safari Web Inspector</span><span>Build Verification</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <h3><span class="skill-card__icon">📝</span> Documentation</h3>
+            <div class="tags">
+              <span>Release Notes</span><span>Usage Notes</span><span>Status Reports</span>
+              <span>QA Compliance Docs</span><span>Google Workspace</span><span>MS Office</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker">03 — Projects</span>
+          <h2 class="section__title">Products I've kept stable</h2>
+          <p class="section__sub">Selected work as QA lead / analyst. Each shipped with rigorous test coverage and measurable quality gains.</p>
+        </div>
+
+        <div class="projects">
+          <!-- MyBabyWish -->
+          <article class="project reveal">
+            <div class="project__media" style="--accent:#ff6b9d">
+              <span class="project__emoji">🤰</span>
+              <span class="project__domain">Healthcare</span>
+            </div>
+            <div class="project__body">
+              <h3>MyBabyWish</h3>
+              <p class="project__role">Manual QA Lead · Web &amp; Mobile</p>
+              <p>Fertility tracking, ovulation monitoring and pregnancy platform. Owned end-to-end manual testing, API validation and patch releases.</p>
+              <ul class="project__points">
+                <li>500+ test cases executed per release cycle</li>
+                <li>Validated REST APIs (booking, onboarding, subscription) → 30% fewer API defect escapes</li>
+                <li>Structured regression suite → 25% fewer post-release defects</li>
+                <li>Cross-device testing across 10+ device/OS combos → 20% stability gain</li>
+              </ul>
+              <div class="tags tags--sm">
+                <span>Postman</span><span>STLC</span><span>Regression</span><span>UAT</span><span>Release Notes</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Nice Guides / Sightwalk -->
+          <article class="project reveal">
+            <div class="project__media" style="--accent:#4dabf7">
+              <span class="project__emoji">🗺️</span>
+              <span class="project__domain">Travel</span>
+            </div>
+            <div class="project__body">
+              <h3>Nice Guides <span class="project__alias">(Sightwalk)</span></h3>
+              <p class="project__role">QA Analyst · Travel Platform</p>
+              <p>Tour creation, ticket purchase and private tour customization workflows for a guided-travel product.</p>
+              <ul class="project__points">
+                <li>Authored &amp; executed test plans for booking and customization flows</li>
+                <li>90% regression pass-rate consistency across sprints</li>
+                <li>Defect escalations → 20% improvement in build stability before UAT</li>
+                <li>Daily execution reports &amp; team status summaries</li>
+              </ul>
+              <div class="tags tags--sm">
+                <span>Functional</span><span>Negative</span><span>System</span><span>JIRA</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- The Easy One / Manuel -->
+          <article class="project reveal">
+            <div class="project__media" style="--accent:#20c997">
+              <span class="project__emoji">📋</span>
+              <span class="project__domain">Compliance</span>
+            </div>
+            <div class="project__body">
+              <h3>The Easy One <span class="project__alias">(Manuel)</span></h3>
+              <p class="project__role">QA Analyst · Compliance &amp; Audit</p>
+              <p>Compliance questionnaire workflows, audit documentation and inspection modules — tested for accuracy and completeness.</p>
+              <ul class="project__points">
+                <li>Integration, regression, negative &amp; end-to-end testing</li>
+                <li>Defect density reduced 18% via structured negative scenarios</li>
+                <li>Maintained full defect lifecycle records across parallel workstreams</li>
+                <li>Aligned QA docs with compliance &amp; audit requirements</li>
+              </ul>
+              <div class="tags tags--sm">
+                <span>E2E</span><span>Audit</span><span>Integration</span><span>Defect Lifecycle</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="more reveal">
+          <h3 class="more__title">Also contributed to</h3>
+          <div class="more__grid">
+            <span>Wakemate</span><span>Augenzeuge</span><span>Shorli</span><span>Hezo</span>
+            <span>Camiino</span><span>Dayas</span><span>Goofy</span><span>BGM</span>
+            <span>Holistic Cloud</span><span>Wilm</span><span>Horse In Motion</span><span>Oyla</span>
+            <span>Meet2</span><span>BWvormagen</span><span>Kiiviiv</span><span>Kickscout</span><span>KZR</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker">04 — Experience</span>
+          <h2 class="section__title">Where I've worked</h2>
+        </div>
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <div class="tl-head">
+                <h3>Sr. Quality Control Analyst</h3>
+                <span class="tl-date">May 2022 — Present</span>
+              </div>
+              <p class="tl-company">AppLaunch Bangalore Pvt. Ltd. · Bengaluru</p>
+              <p>Own the full QA lifecycle across healthcare, travel and compliance products — test planning, execution, API validation, regression suites, defect management and release ownership.</p>
+            </div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <div class="tl-head">
+                <h3>Graduate Trainee — IT</h3>
+                <span class="tl-date">Feb 2021 — May 2022</span>
+              </div>
+              <p class="tl-company">WNS Global Services · Chennai</p>
+              <p>Built foundational QA and IT-support experience; contributed to testing and quality-assurance activities in a large-scale BPO environment.</p>
+            </div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <div class="tl-head">
+                <h3>B.Tech — Mechanical Engineering</h3>
+                <span class="tl-date">Aug 2016 — May 2020</span>
+              </div>
+              <p class="tl-company">Lovely Professional University · Phagwara</p>
+              <p>Bachelor of Technology. Transitioned into software quality assurance after graduation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container contact__inner reveal">
+        <span class="section__kicker">05 — Contact</span>
+        <h2 class="section__title">Let's build something reliable</h2>
+        <p class="contact__lead">Open to QA roles and collaboration. The fastest way to reach me is email.</p>
+        <div class="contact__links">
+          <a href="mailto:balajiguggilam97@gmail.com" class="btn btn--primary">✉️ balajiguggilam97@gmail.com</a>
+          <a href="tel:+918790233572" class="btn btn--ghost">📞 +91 87902 33572</a>
+          <a href="assets/Balaji_Guggilam_Resume.pdf" class="btn btn--ghost" download>📄 Download Resume</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Balaji Guggilam · Bengaluru, India</p>
+      <p class="footer__note">Built to break things — the good way.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
