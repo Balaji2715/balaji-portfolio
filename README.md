@@ -2,7 +2,7 @@
 
 A fast, responsive personal portfolio for **Balaji Guggilam** — Senior **QA Analyst & Business Analyst** (Manual Testing · Requirements & Scope · Web · Android · iOS · Desktop).
 
-🔗 **Live:** https://balaji2715.github.io/balaji-portfolio/ *(after Pages is enabled — see below)*
+🔗 **Live:** https://balaji2715.github.io/balaji-portfolio/ _(after Pages is enabled — see below)_
 
 ## Highlights
 
@@ -65,13 +65,13 @@ Live at `https://<username>.github.io/balaji-portfolio/`.
 
 ## Customizing
 
-| What | Where |
-|---|---|
-| Text, projects, links | `index.html` |
-| Colors, fonts, spacing | CSS variables in `:root` at the top of `src/css/styles.css` |
-| Behavior (theme, animations) | `src/js/main.js` |
-| Resume | replace `assets/resume/Balaji_Guggilam_Resume.pdf` (keep the filename, or update the 3 links in `index.html`) |
-| App icons | `assets/logos/` |
+| What                         | Where                                                                                                         |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Text, projects, links        | `index.html`                                                                                                  |
+| Colors, fonts, spacing       | CSS variables in `:root` at the top of `src/css/styles.css`                                                   |
+| Behavior (theme, animations) | `src/js/main.js`                                                                                              |
+| Resume                       | replace `assets/resume/Balaji_Guggilam_Resume.pdf` (keep the filename, or update the 3 links in `index.html`) |
+| App icons                    | `assets/logos/`                                                                                               |
 
 ---
 

@@ -84,14 +84,22 @@ if (roleEl) {
     'releases ship with confidence.',
     'requirements stay crystal clear.',
   ];
-  let wi = 0, ci = 0, deleting = false;
+  let wi = 0,
+    ci = 0,
+    deleting = false;
   const type = () => {
     const word = words[wi];
     ci += deleting ? -1 : 1;
     roleEl.textContent = word.slice(0, ci);
     let delay = deleting ? 45 : 85;
-    if (!deleting && ci === word.length) { delay = 1800; deleting = true; }
-    else if (deleting && ci === 0) { deleting = false; wi = (wi + 1) % words.length; delay = 350; }
+    if (!deleting && ci === word.length) {
+      delay = 1800;
+      deleting = true;
+    } else if (deleting && ci === 0) {
+      deleting = false;
+      wi = (wi + 1) % words.length;
+      delay = 350;
+    }
     setTimeout(type, delay);
   };
   setTimeout(type, 900);
@@ -120,7 +128,9 @@ sections.forEach((s) => spy.observe(s));
 // ===== Back to top =====
 const toTop = document.getElementById('toTop');
 if (toTop) {
-  window.addEventListener('scroll', () => toTop.classList.toggle('show', window.scrollY > 600), { passive: true });
+  window.addEventListener('scroll', () => toTop.classList.toggle('show', window.scrollY > 600), {
+    passive: true,
+  });
   toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 }
 
